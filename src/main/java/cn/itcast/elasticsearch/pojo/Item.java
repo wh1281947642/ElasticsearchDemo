@@ -96,4 +96,28 @@ public class Item {
     public void setImages(String images) {
         this.images = images;
     }
+
+    public Item() {
+    }
+
+    public Item(Long id, String title, String category, String brand, Double price, String images) {
+        this.id = id;
+        this.title = title;
+        this.category = category;
+        this.brand = brand;
+        this.price = price;
+        this.images = images;
+    }
+
+    @Override
+    public String toString() {
+        return "Item{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", category='" + category + '\'' +
+                ", brand='" + brand + '\'' +
+                ", price=" + price +
+                ", images='" + images + '\'' +
+                '}';
+    }
 }

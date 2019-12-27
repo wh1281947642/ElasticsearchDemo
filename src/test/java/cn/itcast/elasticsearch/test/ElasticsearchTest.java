@@ -177,7 +177,7 @@ public class ElasticsearchTest {
         List<Item> items = itemsPage.getContent();
         items.forEach(item -> {
             System.out.println(item.toString());
-        });
+         });
     }
 
     @Test

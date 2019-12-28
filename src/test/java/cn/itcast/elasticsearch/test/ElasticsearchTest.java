@@ -174,6 +174,7 @@ public class ElasticsearchTest {
         System.out.println(itemsPage.getTotalPages());
         //总条数
         System.out.println(itemsPage.getTotalElements());
+        //内容
         List<Item> items = itemsPage.getContent();
         items.forEach(item -> {
             System.out.println(item.toString());
